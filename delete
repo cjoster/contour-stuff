@@ -1,0 +1,11 @@
+kubectl delete namespace projectcontour
+
+kubectl delete clusterrole contour
+kubectl delete clusterrolebinding contour
+
+kubectl delete crd extensionservices.projectcontour.io
+kubectl delete crd httpproxies.projectcontour.io
+kubectl delete crd tlscertificatedelegations.projectcontour.io
+
+kubectl delete psp envoy-psp
+kubectl delete psp contour-psp
